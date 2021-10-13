@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2? family= Roboto:wght@100 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yaldevi:wght@200&display=swap');
 
 body,body * {
     margin: 0;
@@ -12,7 +12,7 @@ div.card {
     height: 200px;
     font-size: 120px;
     border-radius: 4px;
-    background-color: midnightblue;
+    background-color: rgb(99, 25, 25);
 
     /*centre de contenu*/
     display: flex;
@@ -24,6 +24,6 @@ div.card {
 }
 
 body {
-    background-color: rgba(255, 217, 0, 0.26);
-    font-family : 'Roboto', sans-serif ;
+    background-color: rgba(0, 89, 255, 0.26);
+    font-family: 'Yaldevi', sans-serif;
 }
