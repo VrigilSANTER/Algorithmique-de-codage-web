@@ -2,40 +2,59 @@
 @import url('fontawesome/css/all.css');
 
 body,body * {
-    margin: 0;
-    box-sizing: border-box;
-    position: relative;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
 }
 
 h1 {
-    font-size: 100px;
+  font-size: 100px;
 }
 
-div.card:hover {
-    transform: scale(105%);
+div.card > div:hover {
+  transform: scale(105%);
+}
+
+div.card.gold > div {
+  background-color: goldenrod;
+  border: dotted gold 2px;
+}
+
+div.card.silver > div {
+  background-color: silver;
+  border: dotted gray 2px;
+  /*background-image: url (dossier/mettre le nom de l'image.format);
+  background-seize: 50px*/
+
 }
 
 div.card {
-    /* position: "absolute" (on se libère du layout classique) */
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    font-size: 120px;
-    border-radius: 4px;
-    background-color: rgb(99, 25, 25);
+  /* position: "absolute" (on se libère du layout classique) */
+  position: absolute;
+}
 
-    /*centre de contenu*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
+div.card > div {
+  width: 200px;
+  height: 200px;
+  font-size: 120px;
+  border-radius: 4px;
+  background-color: rgb(99, 25, 25);
 
-    /*Ombre portée*/
-    box-shadow: black 0px 8px 40px;
-    user-select: none;
-    cursor: pointer;
+  /*centre de contenu*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /*Ombre portée*/
+  box-shadow: black 0px 8px 40px;
+  user-select: none;
+  cursor: pointer;
+
+  /*animation*/
+  transition: all 0.2s ease-out;
 }
 
 body {
-    background-color: rgba(0, 89, 255, 0.26);
-    font-family: 'Yaldevi', sans-serif;
+  background-color: rgba(0, 89, 255, 0.26);
+  font-family: 'Yaldevi', sans-serif;
 }
