@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Yaldevi:wght@200&display=swap');
+@import url('fontawesome/css/all.css');
 
 body,body * {
     margin: 0;
@@ -6,7 +7,16 @@ body,body * {
     position: relative;
 }
 
+h1 {
+    font-size: 100px;
+}
+
+div.card:hover {
+    transform: scale(105%);
+}
+
 div.card {
+    /* position: "absolute" (on se libère du layout classique) */
     position: absolute;
     width: 200px;
     height: 200px;
@@ -21,6 +31,8 @@ div.card {
 
     /*Ombre portée*/
     box-shadow: black 0px 8px 40px;
+    user-select: none;
+    cursor: pointer;
 }
 
 body {
