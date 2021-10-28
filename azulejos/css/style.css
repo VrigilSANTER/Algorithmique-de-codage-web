@@ -1,0 +1,59 @@
+/*ceci est un commentaire en CSS (on peut faire aussi "cont + /")*/
+@import url(type1.css);
+
+body,body * {
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+html {
+  --tile-size: 120px;
+  --grid-col: 4;
+  --grid-row: 3; 
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(40, 4, 54);
+  min-height: 100vh;
+}
+
+main#grid {
+  width: calc(var(--grid-col) * var(--tile-size));
+  height: calc(var(--grid-row) * var(--tile-size));
+  border: solid rgb(82, 82, 168) 5px;
+  box-sizing: content-box;
+}
+
+div.tile {
+  position: absolute;
+  width: var(--tile-size);
+  height: var(--tile-size);
+  /* background-color: rgb(32, 47, 116); */
+  /* border: solid rebeccapurple 2px; */
+}
+
+div.tile-content {
+  width: var(--tile-size);
+  height: var(--tile-size);
+  /* background-color: rgb(32, 47, 116); */
+}
+
+div.tile-content > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+div#library {
+  position: absolute;
+  /* z-index: force la div a s'afficher au premier plan */
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
