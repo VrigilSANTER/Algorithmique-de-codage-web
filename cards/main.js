@@ -11,7 +11,10 @@ const getRandomClassName = () => {
   return 'normal'
 }
 
-const getRandomEmoji = () =>{
+const getRandomEmoji = () => {
+  const r = Math.random()
+  if (r < 0.5) {return '🔥'}
+  
   return '🐉'
 }
 
@@ -29,7 +32,7 @@ const clone = (source) => {
   const randomClass = getRandomClassName ()
   clone.className = `card ${randomClass}`
 
-  clone.querySelector('div').innerHTLM = getRandomEmoji()
+  clone.querySelector('div').innerHTML = getRandomEmoji()
 }
 
 const CloneOnClick = (event) => {

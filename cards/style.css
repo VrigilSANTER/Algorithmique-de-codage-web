@@ -23,8 +23,9 @@ div.card.gold > div {
 div.card.silver > div {
   background-color: silver;
   border: dotted gray 2px;
-  /*background-image: url (dossier/mettre le nom de l'image.format);
-  background-seize: 50px*/
+  background-image: url("halo.png");
+  background-size: 210px;
+  background-repeat: no-repeat;
 
 }
 
