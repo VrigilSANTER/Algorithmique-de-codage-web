@@ -6,7 +6,13 @@ const getRandomColor = () => {
   if (r < 0.5){
    return 'rgb(224, 84, 18)'
   }
-return 'rgb(224, 172, 28)'
+  if (r < 0.75) {
+    return 'rgb(118, 95, 204)'
+  }
+  if (r < 0.9) {
+    return 'rgb(83, 15, 49)'
+  }
+  return 'rgb(224, 172, 28)'
 }
 
 const createType1 = () => {
@@ -14,6 +20,8 @@ const createType1 = () => {
   const clone = source.cloneNode(true)
   clone.style.backgroundColor = getRandomColor()
   clone.querySelector('.layer1').style.backgroundColor = getRandomColor()
+  clone.querySelector('.layer2').style.backgroundColor = getRandomColor()
+  clone.querySelector('.layer3').style.backgroundColor = getRandomColor()
   return clone
 }
 

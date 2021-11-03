@@ -7,3 +7,15 @@
   mask-image: url(../assets/star-8.svg);
   -webkit-mask-image: url(../assets/star-8.svg);
 }
+
+.tile-content.type1 .layer2 {
+  background-color: rgb(83, 15, 49);
+  mask-image: url(../assets/star-8-stroke.svg);
+  -webkit-mask-image: url(../assets/star-8-stroke.svg);
+}
+
+.tile-content.type1 .layer3 {
+  background-color: rgb(118, 95, 204);
+  mask-image: url(../assets/4-squares.svg);
+  -webkit-mask-image: url(../assets/4-squares.svg);
+}
