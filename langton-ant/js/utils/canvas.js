@@ -8,6 +8,7 @@ export const setPixel = (x, y, color) => {
 
   context.fillStyle = color
   context.fillRect(x, y, 1, 1)
+  console.log(context, x, y, color)
 }
 
 export const getPixel = (x, y) => {

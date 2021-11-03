@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Yaldevi:wght@200&display=swap');
-@import url('fontawesome/css/all.css');
+
 
 body,body * {
   margin: 0;
@@ -18,22 +18,19 @@ body{
   font-family:'Yaldevi', sans-serif ;
 }
 
-canvas{
-  background-color: rgb(170, 6, 6);
-}
-
-#canvas-wapper {
+#canvas-wrapper {
   /*étant "grow" le contenue a sa taille maximal */
   flex-grow: 1;
   margin: 16px;
 }
 
-#canvas-wapper canvas {
+#canvas-wrapper canvas {
   height: 100%;
   background-color: chartreuse;
+  image-rendering: pixelated;
 }
 
-#canvas-wapper img {
+#canvas-wrapper img {
   position: absolute;
   top: 0;
   left: 0;
