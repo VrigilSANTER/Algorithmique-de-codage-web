@@ -17,12 +17,14 @@
 
   <div id="canvas-wrapper">
     <canvas></canvas>
+    <!-- La balise alt="" est importante pour l'axxesibilité, elle serre a décrire limage, donner une description,
+    donnaer un nom quand elle n'est pas trouvable par l'ordinateur -->
     <img src="fourmi.svg" alt="">
   </div>
 
   <footer>
-    <button>Move</button>
-    <button>Play/Pause</button>
+    <button id="move">Move</button>
+    <button id="play-pause">Play/Pause</button>
   </footer>
 
 <script src="js/main.js" type="module"></script>
